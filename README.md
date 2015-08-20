@@ -18,6 +18,10 @@ This is a simply es6 practice environment
     - [exploring es6](https://github.com/es6-org/exploring-es6)
     - [exploring es6 chinese version](http://exploringjs.com/es6/index.html)
     - [es6 ruanyifeng](http://es6.ruanyifeng.com)
+    
+- es6 articles:
+    - [ES6 In Depth](https://hacks.mozilla.org/category/es6-in-depth/)
+    - [ES6 In Depth chinese version](http://www.csdn.net/article/2015-06-15/2824955-es6-in-depth-an-introduction)
 
 - [es6 shim and polyfills](https://github.com/addyosmani/es6-tools#polyfills)
 
