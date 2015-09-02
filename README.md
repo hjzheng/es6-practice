@@ -22,6 +22,7 @@ This is a simply es6 practice environment
 - es6 articles:
     - [ES6 In Depth](https://hacks.mozilla.org/category/es6-in-depth/)
     - [ES6 In Depth chinese version](http://www.csdn.net/article/2015-06-15/2824955-es6-in-depth-an-introduction)
+    - [ponyfoo ES6](http://ponyfoo.com/articles/tagged/es6)
 
 - [es6 shim and polyfills](https://github.com/addyosmani/es6-tools#polyfills)
 
