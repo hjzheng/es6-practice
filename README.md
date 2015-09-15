@@ -19,6 +19,11 @@ This is a simply es6 practice environment
     - [exploring es6 chinese version](http://exploringjs.com/es6/index.html)
     - [es6 ruanyifeng](http://es6.ruanyifeng.com)
     
+- es6 videos
+    - [Javascript ES6 Cheatsheet - the best of JS ES6 ](https://www.youtube.com/watch?v=AfWYO8t7ed4)
+    - [Javascript ES6 Cheatsheet #2 - the best of JS ES6 ](https://www.youtube.com/watch?v=LmL0Gh193M0)
+    - [Javascript Generators - THEY CHANGE EVERYTHING - ES6 Generators Harmony Generators ](https://www.youtube.com/watch?v=QO07THdLWQo&index=3&list=PLPlAdM3UjHKoHvMWeUyb95yLX59Nk87IX)
+    
 - es6 articles:
     - [ES6 In Depth](https://hacks.mozilla.org/category/es6-in-depth/)
     - [ES6 In Depth chinese version](http://www.csdn.net/article/2015-06-15/2824955-es6-in-depth-an-introduction)
