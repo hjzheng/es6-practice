@@ -15,8 +15,8 @@ This is a simply es6 practice environment
 - [es6 compatibility table](http://kangax.github.io/compat-table/es6/)
 
 - es6 books:
-    - [exploring es6](https://github.com/es6-org/exploring-es6)
-    - [exploring es6 chinese version](http://exploringjs.com/es6/index.html)
+    - [exploring es6 chinese version](https://github.com/hjzheng/exploring-es6)
+    - [exploring es6](http://exploringjs.com/es6/index.html)
     - [es6 ruanyifeng](http://es6.ruanyifeng.com)
     
 - es6 videos
