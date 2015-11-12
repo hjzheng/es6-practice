@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
+var runSequence = require('run-sequence');
 
 var clean = require('gulp-clean');
 var babelify = require('babelify');
@@ -14,16 +15,38 @@ gulp.task("copyIndex", function(){
 
 gulp.task('browserSync', function(){
     browserSync({
+       port: 3000,
        server: {
           baseDir: './build'
-       } 
+       }, 
+       ghostMode: {
+         clicks: true,
+         location: true,
+         forms: true,
+         scroll: true
+       },
+       injectChanges: true,
+       logFileChanges: true,
+       logLevel: 'info',
+       logPrefix: 'es6-practice',
+       notify: true,
+       reloadDelay: 1000
     });
+
+    gulp.watch(['src/index.html', 'src/**/*.js'], {
+        debounceDelay: 400
+    }, function() {
+        runSequence('babelIt', 'copyIndex', function(){
+          browserSync.reload();
+        });
+    });
+
 });
 
-gulp.task("watchFiles", function(){
-   gulp.watch('src/index.html', ['copyIndex']);
-   gulp.watch('src/**/*.js', ['babelIt','copyIndex']);
-});
+// gulp.task("watchFiles", function(){
+//    gulp.watch('src/index.html', ['copyIndex']);
+//    gulp.watch('src/**/*.js', ['babelIt','copyIndex']);
+// });
 
 gulp.task("babelIt", function(){
     browserify({
@@ -41,4 +64,5 @@ gulp.task("clean", function(){
      .pipe(clean());
 });
 
-gulp.task("default", ["copyIndex", "babelIt" ,"browserSync", "watchFiles"]);
+// gulp.task("default", ["copyIndex", "babelIt" ,"browserSync", "watchFiles"]);
+gulp.task("default", ["copyIndex", "babelIt" ,"browserSync"]);
