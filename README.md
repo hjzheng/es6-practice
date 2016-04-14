@@ -1,9 +1,10 @@
 # es6-practice
-This is a simply es6 practice environment
+This is a simple es6 practice environment
 
 ### Usage
 
-- It's very easy to use, just run `npm install & gulp`
+- `npm install -g gulp`
+- `npm install & gulp`
 - Write es6 code in `src/*.js` files, if have new js file, remember import it in `index.js` file.
 
 ### About es6
