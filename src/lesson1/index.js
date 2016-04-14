@@ -9,6 +9,7 @@ console.log(
 console.log(
     `Lesson 1 Let和const命令
 
+Let
 基本用法
      ES6新增了let命令，用来声明变量。它的用法类似于var，但是所声明的变量，只在let命令所在的代码块内有效`
 );
@@ -85,7 +86,7 @@ function Bar() {
 
 console.log(
     `
-const命令
+const
     const也用来声明变量，其他特性和let一样, 但是声明的是常量。一旦声明，常量的值就不能改变。`
 );
 
