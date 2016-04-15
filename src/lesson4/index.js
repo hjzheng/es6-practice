@@ -100,9 +100,9 @@ for (let index of ['a', 'b'].keys()) {
 // 0
 // 1
 
-for (let elem of ['a', 'b'].values()) {
-    console.log(elem);
-}
+// for (let elem of ['a', 'b'].values()) {
+//     console.log(elem);
+// }
 // 'a'
 // 'b'
 
