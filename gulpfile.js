@@ -9,6 +9,8 @@ var source = require('vinyl-source-stream');
 var plumber = require('gulp-plumber'); // I have a question: how to use plumber to handle babel error
 
 var useref = require('gulp-useref');
+var uglify = require('gulp-uglify');
+var streamify = require('gulp-streamify');
 
 
 //handler babel error https://gist.github.com/Fishrock123/8ea81dad3197c2f84366
@@ -92,9 +94,10 @@ gulp.task("babelIt", function () {
         entries: 'src/index.js',
         debug: true
     })
-        .transform(babelify, {presets: ["es2015"]}) //babel 6.0  https://github.com/babel/babelify
+        .transform(babelify, {presets: ["es2015", "stage-0", "stage-1"], "plugins": ["transform-decorators-legacy"]}) //babel 6.0  https://github.com/babel/babelify
         .bundle().on("error", map_error)
         .pipe(source('index.js'))
+        //.pipe(streamify(uglify()))
         .pipe(gulp.dest('./build'));
 });
 

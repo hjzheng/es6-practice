@@ -10,6 +10,6 @@ import {lesson9} from "./lesson9";
 import {lesson10} from "./lesson10";
 
 
-import { TodoListController } from './todoList/TodoListController';
+import TodoListController from './todoList/TodoListController';
 
 angular.module("todoApp", []).controller("TodoListController", TodoListController);
