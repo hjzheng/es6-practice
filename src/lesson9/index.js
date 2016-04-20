@@ -24,3 +24,16 @@ promise.then(function() {
 });
 
 console.log('Hi!');
+
+//暂时没有想到好的测试方法
+
+//最佳写法
+// window.fetch('json/FE.json').then(function(response) {
+//     return response.json()
+// }).then(function(json) {
+//     console.log('parsed json', json)
+//     drawRadar(json);
+// }).catch(function(ex) {
+//     console.log('parsing failed', ex)
+// });
+
