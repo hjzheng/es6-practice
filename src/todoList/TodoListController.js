@@ -26,7 +26,7 @@ class TodoListController {
     }
 
     remaining(){
-        return this.todos.filter(todo => {return todo.done}).length;
+        return this.todos.filter(todo => {return !todo.done}).length;
     }
 
     archive(){
@@ -46,7 +46,11 @@ class TodoListController {
 
 export default TodoListController;
 /*
-* 如果使用Set数据结构, ng-repeat 如何识别
+* 如果使用Set数据结构, ng-repeat 如何识别,
+*
+* 可以通过对Set继承, 实现length属性和数组的取值方式
+*
+* 或者使用 Set.prototype.values 方法 返回一个数组
 *
 * 如何对该 controller 进行依赖注入, use decorators to support ngInject
 *
