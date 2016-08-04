@@ -1,5 +1,6 @@
 # es6-practice
 This is a simple es6 practice environment
+传送门 [es6-practice webpack版](https://github.com/hjzheng/es6-practice-webpack)
 
 ### Usage
 
